@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasas - Pesos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pesos - Monitoreo de Divisas</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="tasas.html" class="active">Tasas y API</a>
+        </nav>
+    </header>
+
+    <main class="api-section">
+        <h2>Consulta de Moneda (API Test)</h2>
+        <button id="btn-fetch-api">Consultar Tasa USD/DOP</button>
+        <div id="api-result">
+            <p>Estado: <span id="api-status">Esperando consulta...</span></p>
+            <p id="api-data"></p>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
