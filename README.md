@@ -64,3 +64,4 @@ Modo reporte visual interactivo:
 
 npx playwright test --reporter=html
 npx playwright show-report
+
