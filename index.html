@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesos - Finanzas Personales</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pesos - Control Financiero</h1>
+        <nav>
+            <a href="index.html" class="active">Inicio</a>
+            <a href="tasas.html">Tasas y API</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Registrar Movimiento</h2>
+            <form id="transaction-form">
+                <div class="form-group">
+                    <label for="description">Descripción:</label>
+                    <input type="text" id="description" required placeholder="Ej. Almuerzo o Café">
+                </div>
+                <div class="form-group">
+                    <label for="amount">Monto ($):</label>
+                    <input type="number" id="amount" required placeholder="0.00">
+                </div>
+                <button type="submit" id="btn-submit">Agregar Movimiento</button>
+            </form>
+            <p id="error-msg" class="error" style="display: none;">Por favor completa todos los campos correctamente.</p>
+        </section>
+
+        <section class="list-section">
+            <h2>Movimientos Registrados</h2>
+            <ul id="transaction-list">
+                <!-- Los elementos se agregarán dinámicamente -->
+            </ul>
+            <button id="btn-clear" class="btn-secondary">Limpiar Lista</button>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
